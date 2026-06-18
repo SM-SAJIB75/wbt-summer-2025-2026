@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Donation Form</title>
+</head>
+<body>
+
+<div class="container">
+
+  <p>* -Denotes Required Information</p>
+
+  <p>
+    <strong>&gt; 1 Donation</strong> &nbsp;
+    &gt; 2 Confirmation &nbsp;
+    &gt; Thank You!
+  </p>
+
+  <h2>Donor Information</h2>
+
+  <table>
+    <tr>
+      <td>First Name*</td>
+      <td><input type="text" name="first_name"></td>
+    </tr>
+    <tr>
+        <td>Last Name*</td>
+      <td><input type="text" name="last_name"></td>
+    </tr>
+    <tr>
+       <td>Company</td>
+        <td><input type="text" name="company"></td>
+    </tr>
+    <tr>
+      <td>Address 1*</td>
+       <td><input type="text" name="address1"></td>
+    </tr>
+      <tr>
+       <td>Address 2</td>
+      <td><input type="text" name="address2"></td>
+    </tr>
+    <tr>
+       <td>City*</td>
+      <td><input type="text" name="city"></td>
+    </tr>
+    <tr>
+      <td>State*</td>
+      <td>
+        <select name="state">
+           <option value="">Select a State</option>
+          <option>Rangpur</option>
+          <option>Dhaka</option>
+          <option>Kurigram</option>
+          <option>Ulipur</option>
+          <option>Bogura</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Zip Code*</td>
+      <td><input type="text" name="zip"></td>
+    </tr>
+    <tr>
+      <td>Country*</td>
+      <td>
+        <select name="country">
+          <option value="">Select a Country</option>
+          <option>Bangladesh</option>
+          <option>USA</option>
+          <option>UK</option>
+          <option>NZ</option>
+          <option>Argentina</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Phone</td>
+      <td><input type="tel" name="phone"></td>
+    </tr>
+    <tr>
+      <td>Fax</td>
+      <td><input type="tel" name="fax"></td>
+    </tr>
+    <tr>
+      <td>Email*</td>
+      <td><input type="email" name="email"></td>
+    </tr>
+    <tr>
+      <td>
+        Donation Amount*<br>
+        <small>(Check a button or type in your amount)</small>
+      </td>
+      <td>
+        <label><input type="radio" name="amount" value="none" checked> None</label>
+        <label><input type="radio" name="amount" value="50"> $50</label>
+        <label><input type="radio" name="amount" value="75"> $75</label>
+        <label><input type="radio" name="amount" value="100"> $100</label>
+        <label><input type="radio" name="amount" value="250"> $250</label>
+        <label><input type="radio" name="amount" value="other"> Other</label>
+        <br>
+        Other Amount $ <input type="text" name="other_amount">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Recurring Donation<br>
+        <small>(Check if yes)</small>
+      </td>
+      <td>
+        <label>
+          <input type="checkbox" name="recurring">
+          I am interested in giving on a regular basis.
+        </label>
+        <br>
+        Monthly Credit Card $
+        <input type="text" name="monthly_amount">
+        For
+        <input type="text" name="months">
+        Months
+      </td>
+    </tr>
+  </table>
+
+
+     <div class="form-buttons">
+    <input type="button" value="Reset">
+    <input type="button" value="Continue">
+  </div>
+
+</div>
+
+</body>
+</html>
