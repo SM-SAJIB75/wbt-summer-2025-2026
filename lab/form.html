@@ -4,10 +4,10 @@
   <title>Donation Form</title>
 </head>
 <body>
+ <form> 
+<div>
 
-<div class="container">
-
-  <p>* -Denotes Required Information</p>
+  <p>* - Denotes Required Information</p>
 
   <p>
     <strong>&gt; 1 Donation</strong> &nbsp;
@@ -17,36 +17,36 @@
 
   <h2>Donor Information</h2>
 
-  <table>
+  <table cellpadding="3" cellspacing="2">
     <tr>
       <td>First Name*</td>
       <td><input type="text" name="first_name"></td>
     </tr>
     <tr>
-        <td>Last Name*</td>
+      <td>Last Name*</td>
       <td><input type="text" name="last_name"></td>
     </tr>
     <tr>
-       <td>Company</td>
-        <td><input type="text" name="company"></td>
+      <td>Company</td>
+      <td><input type="text" name="company"></td>
     </tr>
     <tr>
       <td>Address 1*</td>
-       <td><input type="text" name="address1"></td>
+      <td><input type="text" name="address1"></td>
     </tr>
-      <tr>
-       <td>Address 2</td>
+    <tr>
+      <td>Address 2</td>
       <td><input type="text" name="address2"></td>
     </tr>
     <tr>
-       <td>City*</td>
+      <td>City*</td>
       <td><input type="text" name="city"></td>
     </tr>
     <tr>
       <td>State*</td>
       <td>
         <select name="state">
-           <option value="">Select a State</option>
+          <option value="">Select a State</option>
           <option>Rangpur</option>
           <option>Dhaka</option>
           <option>Kurigram</option>
@@ -120,13 +120,129 @@
     </tr>
   </table>
 
+  <h2>Honorarium and Memorial Donation Information</h2>
 
-     <div class="form-buttons">
-    <input type="button" value="Reset">
-    <input type="button" value="Continue">
-  </div>
+  <table cellpadding="4" cellspacing="2">
+    <tr>
+      <td>
+        I would like to make this donation
+      </td>
+      <td>
+        <label>
+          <input type="radio" name="memorial" value="honor"> To Honor
+        </label><br>
+        <label>
+          <input type="radio" name="memorial" value="memory"> In Memory of
+        </label>
+      </td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td><input type="text" name="mem_name"></td>
+    </tr>
+    <tr>
+      <td>Acknowledge Donation to</td>
+      <td><input type="text" name="ack_to"></td>
+    </tr>
+    <tr>
+      <td>Address</td>
+      <td><input type="text" name="mem_address"></td>
+    </tr>
+    <tr>
+      <td>City</td>
+      <td><input type="text" name="mem_city"></td>
+    </tr>
+    <tr>
+      <td>State</td>
+      <td>
+        <select name="mem_state">
+          <option value="">Select a State</option>
+          <option>Dhaka</option>
+          <option>Rangpur</option>
+          <option>Kurigram</option>
+          <option>Ulipur</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Zip</td>
+      <td><input type="text" name="mem_zip"></td>
+    </tr>
+  </table>
 
 </div>
+     <h2>Additional Information</h2>
 
+<p>
+  Please enter your name, company or organization as you would like it to appear in our publications:
+</p>
+
+<table cellpadding="8" cellspacing="4">
+  <tr>
+    <td>Name</td>
+    <td><input type="text" name="pub_name"></td>
+  </tr>
+</table>
+
+<p>
+  <input type="checkbox" name="anonymous">
+  I would like my gift to remain anonymous.
+</p>
+
+<p>
+  <input type="checkbox" name="matching">
+  My employer offers a matching gift program. I will mail the matching gift form.
+</p>
+
+<p>
+  <input type="checkbox" name="no_ack">
+  Please save the cost of acknowledging this gift by not mailing a thank you letter.
+</p>
+
+<table cellpadding="4" cellspacing="2">
+  <tr>
+    <td>
+      Comments<br>
+      <small>(Please type any questions or feedback here)</small>
+    </td>
+    <td>
+      <textarea rows="4" cols="40" name="comments"></textarea>
+    </td>
+  </tr>
+  <tr>
+    <td>How may we contact you?</td>
+    <td>
+      <input type="checkbox" name="contact_email"> E-mail<br>
+      <input type="checkbox" name="contact_mail"> Postal Mail<br>
+      <input type="checkbox" name="contact_phone"> Telephone<br>
+      <input type="checkbox" name="contact_fax"> Fax
+    </td>
+  </tr>
+</table>
+
+<p>
+  I would like to receive newsletters and information about special events by:
+</p>
+
+<p>
+  <input type="checkbox" name="news_email"> E-mail<br>
+  <input type="checkbox" name="news_mail"> Postal Mail
+</p>
+
+<p>
+  <input type="checkbox" name="volunteer">
+  I would like information about volunteering with the organization.
+</p>
+
+<p>
+  <input type="" value="Reset">
+  <input type="button" value="Continue">
+</p>
+
+<p>
+  Donate online with confidence. You are on a secure server.<br>
+  If you have any problems or questions, please contact support.
+</p>
+</body>form> 
 </body>
 </html>
