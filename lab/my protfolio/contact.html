@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — SM Sojib</title>
+</head>
+
+<body>
+
+  <!-- ===== Navigation Bar ===== -->
+  <nav>
+    <a href="../index.html">Home</a> |
+    <a href="education.html">Education</a> |
+    <a href="experience.html">Experience</a> |
+    <a href="projects.html">Projects</a>
+  </nav>
+
+  <hr>
+
+  <h1>Contact Me</h1>
+  <p>Fill out the form below and I'll get back to you soon.</p>
+
+  <form action="#" method="post">
+
+    <fieldset>
+      <legend>Contact Form</legend>
+
+      <table>
+        <tr>
+          <td><label for="firstName">First Name:</label></td>
+          <td><input type="text" id="firstName" name="firstName" required></td>
+        </tr>
+        <tr>
+          <td><label for="lastName">Last Name:</label></td>
+          <td><input type="text" id="lastName" name="lastName" required></td>
+        </tr>
+        <tr>
+          <td><label>Gender:</label></td>
+          <td>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="other"> Other</label>
+            <label><input type="radio" name="gender" value="prefer-not"> Prefer not to say</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+          <td><label for="reason">Reason for Contact:</label></td>
+          <td>
+            <select id="reason" name="reason">
+              <option value="">-- Please choose an option --</option>
+              <option value="internship">Internship</option>
+              <option value="thesis">Thesis</option>
+              <option value="projects">Projects</option>
+              <option value="collaboration">Collaboration</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Services of Interest:</label></td>
+          <td>
+            <label><input type="checkbox" name="services" value="java-development"> Java Development</label>
+            <label><input type="checkbox" name="services" value="database"> Database Management</label>
+            <label><input type="checkbox" name="services" value="software-dev"> Software Development</label>
+            <label><input type="checkbox" name="services" value="research"> Research & Publication</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="message">Message:</label></td>
+          <td><textarea id="message" name="message" rows="5" cols="30" placeholder="Write your message here..."></textarea></td>
+        </tr>
+        <tr>
+          <td><label for="appointment">Book an Appointment:</label></td>
+          <td><input type="datetime-local" id="appointment" name="appointment"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><button type="submit">Send Message</button></td>
+        </tr>
+      </table>
+
+    </fieldset>
+  </form>
+
+  <hr>
+
+  <footer>
+    <p><small>&copy; 2026 SM Sojib</small></p>
+  </footer>
+
+</body>
+
+</html>
