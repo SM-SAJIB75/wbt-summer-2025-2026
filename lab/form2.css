@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  background: #ebe9e4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 40px 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 480px;
+  background: #fafaf8;
+  border: 1px solid #dddbd4;
+  border-radius: 16px;
+  padding: 40px;
+}
+
+/* Header */
+.card-header {
+  border-bottom: 3px solid #2a3a8f;
+  padding-bottom: 20px;
+  margin-bottom: 28px;
+}
+
+.card-header h1 {
+  color: #2a3a8f;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.card-header p {
+  color: #6b7280;
+  font-size: 18px;
+}
+
+/* Fields */
+.field {
+  margin-bottom: 22px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #2b3a4f;
+  margin-bottom: 8px;
+}
+
+input,
+select {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #cfd3da;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 17px;
+  font-family: inherit;
+  color: #2b3a4f;
+}
+
+input::placeholder {
+  color: #a8acb3;
+}
+
+input[type="date"] {
+  color: #6c7bef;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #2a3a8f;
+}
+
+/* Country dropdown with custom arrow */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 40px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M0 0 L12 0 L6 8 Z' fill='%232b3a4f'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.btn-primary,
+.btn-secondary {
+  border-radius: 6px;
+  padding: 16px;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn-primary {
+  flex: 1;
+  background: #2a3a8f;
+  color: #ffffff;
+  border: 1px solid #2a3a8f;
+}
+
+.btn-secondary {
+  background: #ffffff;
+  color: #2a3a8f;
+  border: 1px solid #2a3a8f;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* Validation error messages */
+.error {
+  display: block;
+  color: red;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+/* Submitted values */
+.summary h2 {
+  color: #2a3a8f;
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+.result-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.result-table td {
+  padding: 10px 12px;
+  border: 1px solid #dddbd4;
+  font-size: 16px;
+  color: #2b3a4f;
+}
+
+.result-table td:first-child {
+  font-weight: 700;
+  background: #f2f1ec;
+  width: 40%;
+}
